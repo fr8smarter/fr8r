@@ -1,0 +1,24 @@
+INSERT INTO maintRecords (
+    assetID,
+    userID, 
+    serviceDate, 
+    serviceDesc, 
+    vehicleSystem, 
+    miles,
+    cost,
+    vendorID,
+    maintCategory,
+    maintNotes
+    )
+VALUES(    
+    :assetID,
+    :userID, 
+    :serviceDate,
+    :serviceDesc, 
+    :vehicleSystem,
+    :miles,
+    :cost,
+    :vendorID,
+    :maintCategory,
+    :maintNotes
+    )

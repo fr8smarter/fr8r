@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+	<meta name="author" content="www.frebsite.nl" />
+	<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+	<title>Fr8R</title>
+	<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+	<link rel="stylesheet" href="css/appStyle.css" />
+	<link rel="stylesheet" href="css/flexslider.css" />
+	<link rel="stylesheet" href="css/jquery.mmenu.all.css" />
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<link rel="stylesheet" href="http://js.api.here.com/v3/3.0/mapsjs-ui.css" />
+	<link rel="stylesheet" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1542186754" />
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="js/jquery.easy-pie-chart.js"></script>
+	<script type="text/javascript" src="js/o-script.js"></script>
+	<script type="text/javascript" src="js/HERE.js"></script>
+	
+	<!--HERE API JS-->		
+	
+	<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
+	<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
+	<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+	<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+
+
+
+</head>
+
+<body class="o-page">
+<div id="page">
+	<div id="header">
+		<a href="#menu"></a>
+		<span id="Logo" class="svg">
+		<img src="images/fr8r_logo_black.png" alt="logo" />
+		</span>
+		<a class="backBtn" href="javascript:history.back();"></a>
+		</div>
+	<div class="subHeader">
+		<i class='ti-map'></i>Map
+		</div>
+	
+	<div id="map" style="position:absolute; width:49%; height:100%; background:grey" ></div>
+	<div id="panel" style="position:absolute; width:49%; left:51%; height:100%; background:inherit" ></div>
+	  
+	</div>	 
+				
+	<div class="block">
+		Explore our site
+	</div>
+	
+<!--  bottom nav-->
+
+	<div class="exploreSiteFullPane">
+		<a href="appHome.html" class="explorePane">
+			<span class="i-pane i-green">
+				<i class="ti ti-home"></i>
+			</span>
+			<h4>Home</h4>
+		</a>
+		<a href="contact.html" class="explorePane middle">
+			<span class="i-pane i-green">
+				<i class="ti ti-headphone"></i>
+			</span>
+			<h4>Contact</h4>
+		</a>
+		<a href="analytics.html" class="explorePane">
+			<span class="i-pane i-green">
+				<i class="ti ti ti-stats-up"></i>
+			</span>
+			<h4>Analytics</h4>
+		</a>
+		<a href="gallery.html" class="explorePane">
+			<span class="i-pane i-green">
+				<i class="ti ti-money"></i>
+			</span>
+			<h4>Cost of Fr8</h4>
+		</a>
+		<a href="history.html" class="explorePane middle">
+			<span class="i-pane i-green">
+				<i class="ti ti-dashboard"></i>
+			</span>
+			<h4>History</h4>
+		</a>
+		<a href="navig8.html" class="explorePane active">
+			<span class="i-pane i-green">
+				<i class="ti ti-map-alt"></i>
+			</span>
+			<h4>Navig8</h4>
+		</a>
+	</div>
+
+<!--  nav menu  -->
+
+	<nav id="menu">
+		<ul>
+				<a href="appHome.html">
+					<i class="ti ti-home"></i>Home
+				</a>
+			</li>
+			<li>
+				<a href="contact.html">
+					<i class="ti ti-headphone"></i>Contact
+				</a>
+			</li>
+			<li>
+				<a href="analytics.html">
+					<i class="ti ti-stats-up"></i>Analytics
+				</a>
+			</li>
+
+			
+			<li>
+				<a href="fr8Cost.html">
+					<i class="ti ti-money"></i>Fr8 cost
+				</a>
+			</li>
+			<li>
+				<a href="history.html">
+					<i class="ti ti-dashboard"></i>History
+				</a>
+			</li>
+			<li>
+				<li class="Selected">
+				<a href="navig8.html">
+					<i class="ti ti-map-alt"></i>Navig8
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+<div class="socialMedia">
+		<a href="https://www.facebook.com/FPVdata/" class="ico-facebook" title="facebook">facebook</a>
+		<a href="https://twitter.com/FPVdata" class="ico-twitter" title="twittertwitter">twitter</a>
+		<a href="https://www.linkedin.com/in/bruce-henry-49650a19/" class="ico-linkedin" title="linkedin">linkedin</a>
+		<a href="#" class="ico-youtube" title="youtube">youtube</a>
+	</div>
+</div>
+
+<script>
+		// Initialize the platform object:
+		var platform = new H.service.Platform({
+		'app_id': 'Vj6VToHC2QHyWN69FoVj',
+		'app_code': 'G-kPhG2op_b4iQmPoBP3iw'
+		});
+	
+		// Obtain the default map types from the platform object
+		var maptypes = platform.createDefaultLayers();
+	
+		// Instantiate (and display) a map object:
+		var map = new H.Map(
+		document.getElementById('mapContainer'),
+		maptypes.normal.map,
+		{
+		  zoom: 10,
+		  center: { lng: -84, lat: 39}
+		});
+	  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+INSERT INTO users (
+    fName,
+    lName,
+    email,
+    pwd,
+    phone,
+    address1,
+    address2,
+    city,
+    stateID,
+    zip,
+    countryID,
+    MCnumber
+     )
+VALUES(    
+    :fName,
+	:lName,
+    :email,
+    :pwd,
+    :phone,
+    :address1,
+    :address2,
+    :city,
+    :stateID,
+    :zip,
+    :countryID,
+    :MC
+    )

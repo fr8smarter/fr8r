@@ -1,0 +1,5 @@
+ALTER TABLE maintRecords
+ADD FOREIGN KEY fk_assetID(assetID)
+REFERENCES assetMaster(assetID)
+ON DELETE NO ACTION
+ON UPDATE CASCADE;

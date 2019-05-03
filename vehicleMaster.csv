@@ -1,0 +1,9 @@
+userID,vehicleID,assetCategory,assetStatus,vehicle,VIN,year,currentMiles,acquireDate,imageURL,currentValue,oilInterval,engineOil,oilFilter,oilQty,sparkPlug,airFilter,keyBattery,tireSize,transmissionFluid,notes:
+2,1,1,1,BMW 335 Coupe,,2011,66135,12/22/16 0:00,https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/BMW_320i_M_Coupe_2013_%2816233870112%29.jpg/2560px-BMW_320i_M_Coupe_2013_%2816233870112%29.jpg,15000,"10,000",5w-30 synthetic,K&N pro series PS-7014,6.9,,,,225/45r17,,
+2,2,2,1,Yamaha FZ6,,2008,36036,1/1/11 0:00,https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/2009-02-10_2008_Yamaha_FZ6_on_stand.jpg/2560px-2009-02-10_2008_Yamaha_FZ6_on_stand.jpg,2500,"4,000",10w-30 moto,K&N gold 204,3,,,,,,
+2,3,1,1,BMW 530 XI,,2007,150718,4/4/09 0:00,https://upload.wikimedia.org/wikipedia/commons/5/53/BMW_530i_%28E60%29_Facelift_20090615_front.JPG,4500,"7,000",5w-30 synthetic,K&N pro series PS-7014,6.9,,,,225/50/r17,,
+2,4,1,1,Subaru Forester,,2014,39029,3/12/18 0:00,https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Subaru_Forester_2.0XT_AWD_Platinum_%28IV%29_%E2%80%93_Frontansicht%2C_1._M%C3%A4rz_2014%2C_Wuppertal.jpg/2560px-Subaru_Forester_2.0XT_AWD_Platinum_%28IV%29_%E2%80%93_Frontansicht%2C_1._M%C3%A4rz_2014%2C_Wuppertal.jpg,15000,10000,0w-20 synthetic,amazon ,5.1,,,,,,
+2,5,3,1,SCAG Mower,,1999,0,1/1/00 0:00,,,,10w-30,Stens,1.3,,,,,,
+2,6,4,1,Malibu 2010 23LSV,,2010,0,3/15/15 0:00,,35000,,15w-40 synrthetic,Fram PH-30/Penxoil PZ-3,5.5,AC Delco 41-932 Platinum,,,,Dextron II,1 qt in front 2 in back
+2,7,1,1,GMC Yukon,,2017,10610,10/27/18 0:00,,55000,"7,500",0w-20 synthetic,K&N PS or HP-2011,8,,,,,,
+2,8,1,2,Land Rover LR4,,2011,110000,3/5/14 0:00,,0,10000,,,,,,,,,trade-in for Yukon

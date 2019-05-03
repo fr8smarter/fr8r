@@ -1,0 +1,28 @@
+INSERT INTO vendors (
+    vendorName,
+    vendorContact, 
+    email, 
+    website,
+    phone, 
+    address1, 
+    address2, 
+    vendorCity,
+    vendorStateID, 
+    zip, 
+    countryID, 
+    vendorNotes
+    )
+VALUES(    
+    :vendorName,
+    :vendorContact, 
+    :email, 
+    :website,
+    :phone, 
+    :address1, 
+    :address2, 
+    :vendorCity,
+    :vendorStateID, 
+    :zip, 
+    :countryID, 
+    :vendorNotes
+    )
